@@ -1,0 +1,178 @@
+{% extends 'template.html' %}
+{% block xx %}
+
+    <div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3  mt-4 mb-1 text-muted">
+                    <span>食堂数据分析</span>
+                    <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                        <span data-feather="plus-circle"></span>
+                    </a>
+            </h6>
+            <li class="nav-item">
+                <a class="nav-link" href="/main/canteen_traffic">
+                  <span data-feather="home"></span>
+                  食堂人流量 <span class="sr-only">(current)</span>
+                </a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/main/canteen_principal/">
+              <span data-feather="file"></span>
+              食堂负责人
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="shopping-cart"></span>
+              网红窗口
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/main/CD/">
+              <span data-feather="users"></span>
+              消费数据
+            </a>
+          </li>
+        </ul>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>学生消费数据</span>
+            <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                <span data-feather="plus-circle"></span>
+            </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="/main/TA">
+              <span data-feather="file-text"></span>
+              三餐均值
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              聚类结果
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4"></main>
+  </div>
+</div>
+
+       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">食堂负责人</h1>
+        <div class="btn-toolbar mb-2 mb-md-0"></div>
+      </div>
+      <div class="table-responsive">
+        <table style="vertical-align: center;border-collapse:collapse;text-align: center" class="previewtable table-striped table-sm" border="0" >
+
+        <tr>
+            <td rowspan=1 colspan=2>校区</td>
+            <td>食堂名称</td>
+            <td>地理位置</td>
+            <td>经营公司</td>
+            <td>责任人</td>
+            <td>手机</td>
+            <td>办公室电话</td>
+            <td>科室分管人员、联系方式</td>
+        </tr>
+        <tr>
+            <th rowspan="5" colspan="1">本部</th>
+            <td>1</td><td>本部方塔食堂</td>
+            <td>本部幼儿园旁</td>
+            <td>苏州工业园区科桥餐饮服务有限公司</td>
+            <td>蒋德生</td>
+            <td>15962152956</td>
+            <td></td>
+            <td rowspan=5 colspan=1>王明明 13451550833</td>
+        </tr>
+        <tr><td>2</td>
+            <td>本部莘园一楼</td>
+            <td>敬文书院南面一楼</td>
+            <td>南京梅花餐饮管理有限公司</td>
+            <td>段体成</td>
+            <td>18956683610</td>
+            <td></td>
+        </tr>
+        <tr><td>3</td>
+            <td>本部莘园二楼</td>
+            <td>敬文书院南面二楼</td>
+            <td>常州扬子餐饮管理有限公司</td>
+            <td>倪将军</td>
+            <td>15195057377</td>
+            <td></td>
+        </tr>
+        <tr><td>4</td>
+            <td>本部莘园茶餐厅</td>
+            <td>敬文书院南面三楼</td>
+            <td>苏州市东吴物业管理有限公司</td>
+            <td>朱溢芳</td>
+            <td>15995447047</td>
+            <td></td>
+        </tr>
+        <tr><td>5</td>
+            <td>本部教工食堂</td>
+            <td>本部存菊堂后面</td>
+            <td>苏州市东吴物业管理有限公司</td>
+            <td>陆允忠</td>
+            <td>18068428313</td>
+            <td></td>
+        </tr>
+        <tr><th rowspan=4 colspan=1>东区</th>
+        <td>6</td><td>东区第四食堂一楼</td>
+            <td>东区教育超市北面一楼</td>
+            <td>苏州工业园区科桥餐饮服务有限公司</td>
+            <td rowspan=2 colspan=1>王国欢</td>
+            <td rowspan=2 colspan=1>15161849258</td>
+            <td>67162403</td>
+            <td style="text-align: center" rowspan=4 colspan=1>王文俊  13222275093</td>
+        </tr>
+        <tr><td>7</td>
+            <td>东区第四食堂二楼</td>
+            <td>东区教育超市北面二楼</td>
+            <td>苏州工业园区科桥餐饮服务有限公司</td>
+            <td></td>
+        </tr>
+        <tr><td>8</td>
+            <td>东区第五食堂</td>
+            <td>东区四食堂北面一楼</td>
+            <td>苏州工业园区科桥餐饮服务有限公司</td>
+            <td>沈荣昌</td><td>13862586758</td>
+            <td>67162364</td>
+        </tr>
+        <tr><td>9</td>
+            <td>东区第七食堂</td>
+            <td>东区四食堂北面二楼</td>
+            <td>苏州中快餐饮管理有限公司</td>
+            <td>黄赞华</td>
+            <td>15962288994</td>
+            <td></td>
+        </tr>
+{#        <tr><th>北区</th>#}
+{#            <td>10</td>#}
+{#            <td>北区第六食堂</td>#}
+{#            <td>北区工科楼东面</td>#}
+{#            <td>苏州工业园区科桥餐饮服务有限公司</td>#}
+{#            <td>杨伟</td>#}
+{#            <td>13616271653</td>#}
+{#            <td>67162648</td>#}
+{#            <td>王明明 13451550833</td>#}
+{#        </tr>#}
+
+    </table>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/static/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/static/assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="/static/JS/dashboard.js"></script> </body>{% endblock %}
+
+</html>

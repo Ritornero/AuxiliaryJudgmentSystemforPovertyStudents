@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scable=no"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="../../static/Login/css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/Login/font-awesome/css/font-awesome.css"/>
+	</head>
+	<body>
+            <div id="login-box" >
+                <h1>Login</h1>
+                    <form method="POST" action="">
+                        <div class="form" >
+                            <div class="item">
+                                <!--小图标-->
+                                <i class="fa fa-user-circle"></i>
+                                <input type="text" placeholder="Username" name="username"/>
+                                <div style="size:12px; color: whitesmoke">{{ form.errors.username }}</div>
+                                <div style="size:12px; color: whitesmoke">{{ username }}</div>
+                            </div>
+
+                            <div class="item">
+                                <i class="fa fa-key"></i>
+                                <input type="text" placeholder="Password" name="password"/>
+                                <div style="size:12px; color: whitesmoke">{{ form.errors.password }}</div>
+                                <div style="size:12px; color: whitesmoke">{{ error }}</div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <button style="height: 30px ;width: 100px" type="submit">
+                            <div style="font-size: 16px" >sign in</div>
+                        </button>
+                    </form>
+            </div>
+	</body>
+</html>
